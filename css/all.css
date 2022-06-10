@@ -1,0 +1,774 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.plan_button {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  width: 136px;
+  height: 49px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: normal normal normal Comfortaa;
+  background: #56C4C5 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+h2 {
+  font: normal normal Noto Sans TC;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #221E1F;
+}
+
+p {
+  font: normal normal Noto Sans TC;
+  letter-spacing: 0px;
+  color: #221E1F;
+}
+
+h3 {
+  font: normal normal Noto Sans TC;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #56C4C5;
+}
+
+.wrap {
+  max-width: 1366px;
+  padding: 0 107px;
+  margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+  .wrap {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+.background {
+  margin: 0 auto;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 768px;
+}
+
+@media (max-width: 786px) {
+  .background {
+    height: 0px;
+    background-position: center;
+  }
+}
+
+.header {
+  max-width: 1366px;
+  padding: 0 107px;
+  margin: 0 auto;
+}
+
+@media (max-width: 786px) {
+  .header {
+    margin: 0 auto;
+    padding: 0 0;
+  }
+}
+
+.header .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+
+.header .banner img {
+  width: 219px;
+}
+
+@media (max-width: 786px) {
+  .header .banner {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #FFD153;
+  }
+  .header .banner img {
+    width: 130px;
+  }
+}
+
+.header .banner a {
+  background: #FF5D50 0% 0% no-repeat padding-box;
+  font-size: 16px;
+  border-radius: 22px;
+  width: 128px;
+  height: 40px;
+}
+
+.header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 786px) {
+  .header .title {
+    margin: 0 auto;
+    padding: 0 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header .title .title_wording {
+  padding-top: 158px;
+  padding-bottom: 157px;
+}
+
+.header .title .title_wording h3 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.header .title .title_wording h2 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.header .title .title_wording p {
+  font-size: 20px;
+}
+
+.header .title .home_img img {
+  display: block;
+  height: 532px;
+}
+
+@media (max-width: 786px) {
+  .header .title .title_wording {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .header .title .title_wording h3 {
+    font-size: 16px;
+  }
+  .header .title .title_wording h2 {
+    font-size: 32px;
+  }
+  .header .title .title_wording p {
+    font-size: 16px;
+  }
+  .header .title .home_img {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 245px;
+  }
+  .header .title .home_img img {
+    display: block;
+    height: 304px;
+  }
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.top a {
+  display: block;
+  text-decoration: none;
+}
+
+.top p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font: bolder;
+  font-size: 24px;
+  height: 71px;
+  width: 71px;
+  border-radius: 50%;
+  color: white;
+  background-color: #56C4C5;
+}
+
+@media (max-width: 786px) {
+  .top p {
+    height: 50px;
+    width: 50px;
+    font-size: 16px;
+  }
+}
+
+.socail_media {
+  margin-top: 100px;
+}
+
+.socail_media h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.socail_media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 48px;
+}
+
+.socail_media ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.socail_media ul li img {
+  height: 90px;
+  width: 90px;
+  display: block;
+  margin: auto;
+}
+
+.socail_media ul li h2 {
+  padding-top: 24px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.socail_media ul li p {
+  padding-top: 24px;
+  font-size: 16px;
+  color: #747474;
+  text-align: center;
+}
+
+.socail_media ul li .fb {
+  width: 228px;
+}
+
+.socail_media ul li .line {
+  width: 240px;
+}
+
+.socail_media ul li .ig {
+  width: 212px;
+}
+
+@media (max-width: 786px) {
+  .socail_media h2 {
+    font-size: 28px;
+  }
+  .socail_media ul li h2 {
+    font-size: 18px;
+  }
+  .socail_media ul li p {
+    font-size: 16px;
+  }
+}
+
+.buyer_role {
+  margin-top: 100px;
+}
+
+.buyer_role h2 {
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 16px;
+}
+
+.buyer_role p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.buyer_role ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 48px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.buyer_role ul li {
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  padding-bottom: 24px;
+  margin-top: 24px;
+}
+
+.buyer_role ul li h3 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.buyer_role ul li p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.buyer_role ul img {
+  height: 260px;
+  width: 260px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+@media (max-width: 786px) {
+  .buyer_role h2 {
+    font-size: 28px;
+  }
+  .buyer_role p {
+    font-size: 18px;
+  }
+  .buyer_role ul li h3 {
+    font-size: 16px;
+  }
+  .buyer_role ul li p {
+    font-size: 16px;
+  }
+}
+
+.intro {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.intro ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.intro ul img {
+  display: block;
+  width: 86px;
+  height: 86px;
+  margin-top: 32px;
+  padding: 22.49px 19.76px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+}
+
+.intro ul h2 {
+  font-size: 18px;
+  margin-top: 41px;
+  margin-bottom: 16px;
+}
+
+.intro ul p {
+  font-size: 16px;
+}
+
+.intro ul li {
+  margin-right: 47px;
+  padding-bottom: 48px;
+  padding-right: 32px;
+  padding-left: 32px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  width: 230px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 786px) {
+  .intro {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .intro ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .intro ul li {
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+}
+
+.intro .intro_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro .intro_info h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  width: 256px;
+}
+
+.intro .intro_info p {
+  font-size: 18px;
+  width: 396px;
+  color: #221E1F;
+}
+
+.intro .intro_info a {
+  margin-top: 24px;
+}
+
+@media (max-width: 786px) {
+  .intro .intro_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .intro .intro_info h2 {
+    font-size: 28px;
+  }
+  .intro .intro_info p {
+    font-size: 16px;
+    width: 335px;
+  }
+}
+
+.rating {
+  padding-top: 48px;
+}
+
+.rating .rating_title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 104px;
+}
+
+.rating .rating_module {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.rating .rating_module .comment {
+  padding-bottom: 24px;
+}
+
+.rating .rating_module li {
+  width: 352px;
+  margin-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.rating .rating_module li .profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
+  left: 32px;
+}
+
+.rating .rating_module li p {
+  font-size: 16px;
+}
+
+.rating .rating_module .rating_box {
+  padding-top: 24px;
+  border-top: 1px solid #DDDDDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rating .rating_module .rating_box h2 {
+  font-size: 16px;
+}
+
+.rating .rating_module .rating_box p {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.rating .rating_module .rating_box .rating_star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.rating .rating_module .rating_box .rating_star img {
+  display: block;
+  max-width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+@media (max-width: 786px) {
+  .rating .rating_module .disapear {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 0;
+  }
+  .rating .rating_module .disapear h2, .rating .rating_module .disapear p, .rating .rating_module .disapear img, .rating .rating_module .disapear div, .rating .rating_module .disapear li {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 0;
+  }
+}
+
+.rating .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rating .page li {
+  background: #DDDDDD 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  height: 10px;
+  width: 10px;
+  margin-right: 8px;
+}
+
+.rating .page li:hover {
+  height: 10px;
+  width: 16px;
+  background: #FFD153 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.footer .plan {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 503px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.footer .plan h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.footer .plan a {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .footer .plan {
+    height: 461px;
+  }
+  .footer .plan h2 {
+    font-size: 24px;
+  }
+}
+
+.footer .copy_right {
+  background: #F5F5F5;
+  height: 56px;
+  padding-top: 16px;
+}
+
+.footer .copy_right p {
+  text-align: center;
+  font-size: 16px;
+}
+/*# sourceMappingURL=all.css.map */
